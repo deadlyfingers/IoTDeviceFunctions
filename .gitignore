@@ -1,0 +1,38 @@
+
+bin
+obj
+csx
+.vs
+edge
+Publish
+#.vscode
+
+*.user
+*.suo
+*.cscfg
+*.Cache
+project.lock.json
+
+/packages
+/TestResults
+
+/tools/NuGet.exe
+/App_Data
+/secrets
+/data
+.secrets
+appsettings.json
+local.settings.json
+
+# node
+node_modules
+package-lock.json
+
+# jest
+/coverage
+
+# config
+.env
+
+# ignore ^ prefixed files
+^*

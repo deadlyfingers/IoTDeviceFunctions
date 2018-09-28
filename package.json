@@ -1,0 +1,49 @@
+{
+  "name": "iot-azure-functions",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deadlyfingers/IoTDeviceFunctions"
+  },
+  "dependencies": {
+    "@azure/event-hubs": "^1.0.4",
+    "adal-node": "^0.1.28",
+    "azure-iothub": "^1.7.4",
+    "documentdb": "^1.14.5",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "frisby": "^2.0.16",
+    "jest": "^23.4.1"
+  },
+  "scripts": {
+    "start": "func host start",
+    "debug": "func host start --debug VSCode",
+    "dev": "func host start --debug VSCode --nodeDebugPort 5858 --port 7071",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      ".*/node_modules/.*",
+      "@.*/"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!coverage/**",
+      "!**/node_modules/**"
+    ]
+  },
+  "main": "index.js",
+  "description": "Azure Functions backend for monitoring IoT Devices with Unity",
+  "keywords": [
+    "Azure Functions",
+    "IoT Hub",
+    "Unity"
+  ],
+  "author": "David Douglas",
+  "homepage": "http://deadlyfingers.net",
+  "license": "MIT",
+  "private": true
+}

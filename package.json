@@ -6,10 +6,8 @@
     "url": "https://github.com/deadlyfingers/IoTDeviceFunctions"
   },
   "dependencies": {
-    "@azure/event-hubs": "^1.0.4",
     "adal-node": "^0.1.28",
     "azure-iothub": "^1.7.4",
-    "documentdb": "^1.14.5",
     "request": "^2.88.0"
   },
   "devDependencies": {
@@ -36,7 +34,7 @@
     ]
   },
   "main": "index.js",
-  "description": "Azure Functions backend for monitoring IoT Devices with Unity",
+  "description": "Azure Functions REST API for getting IoT device details and telemetry",
   "keywords": [
     "Azure Functions",
     "IoT Hub",

@@ -2,6 +2,12 @@
 
 Azure Functions for getting IoT Hub device info and telemetry from Azure Time Series Insights environment.
 
+## Setup
+To help get started there is an [IoT Remote Monitoring solution](https://www.azureiotsolutions.com/Accelerators) that we can try. 
+This will setup Azure IoT Hub and Time Series Insights environment with sample IoT devices and telemetry data for our Azure Function APIs.
+
+![azure-iot-000-solution-accelerators](https://user-images.githubusercontent.com/1880480/46277671-c3a70980-c55b-11e8-8cdf-f77a9c5ff1d3.jpg)
+
 ## Prerequistes
 - [Node 8.5.0 or better](https://nodejs.org/en/)
 
@@ -52,7 +58,7 @@ Gets telemetry of device from Time Series Insights using the device Id
 2. Sign in to [Azure portal](https://portal.azure.com)
 2. Create new **Azure Function**
     - Once your **Azure Function** is provisioned ensure your **Function app settings** is using **version 2**
-3. Back in your **Azure Function** add the following environment variables using your connection details:
+3. Add the following environment variables using your **Azure Function** app settings:
     - **IOTHUB_CONNECTION_STRING**
     - **TSI_FQDN**
     - **AD_APP_ID**
